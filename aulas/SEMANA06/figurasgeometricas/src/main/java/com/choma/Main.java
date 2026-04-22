@@ -29,6 +29,13 @@ public class Main {
             System.out.println("--");
         }
 
+//Animal a = new Cachorro();
+
+// if (a instanceof Cachorro) {
+//     Cachorro c = (Cachorro) a;
+//    c.abanarRabo();
+// }
+
 
     }
 }

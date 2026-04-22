@@ -38,3 +38,22 @@ Repositório oficial para organização e acompanhamento da disciplina **Program
 - "Quem não faz nada não erra, e quem não erra é promovido." by Outro alguem (1900)
 - “Quem não mexe no código vive em paz com o bug.” by Beutrano (1900)
 - “Quem decide no achismo nunca perde tempo com dados.” by Ciclano (1900)
+
+
+## Organização esperada de temas
+
+- objetos e classes;
+- abstração;
+- encapsulamento;
+- herança;
+- polimorfismo;
+- sobrecarga (overloading);
+- sobrescrita (overriding);
+- relacionamento entre classes;
+    -    associação, agregação e composição;
+- arrays, ArrayList;
+- tratamento de exceções;
+- interface gráfica;
+- API rest;
+- spring boot;
+    - arquitetura em camadas;
