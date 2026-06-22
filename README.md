@@ -1,5 +1,10 @@
 # Programação Orientada a Objetos - 2026
 
+## 2 Prova
+
+- Prova 29/06
+- Atividades 05/07
+
 ![Banner da disciplina](./assets/image.png)
 
 Repositório oficial para organização e acompanhamento da disciplina **Programação Orientada a Objetos** (2026).
