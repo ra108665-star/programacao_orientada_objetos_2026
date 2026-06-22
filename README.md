@@ -3,7 +3,7 @@
 ## 2 Prova
 
 - Prova 29/06
-- Atividades 05/07
+- Atividades 06/07
 
 ![Banner da disciplina](./assets/image.png)
 
