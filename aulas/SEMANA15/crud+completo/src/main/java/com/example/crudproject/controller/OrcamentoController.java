@@ -2,10 +2,13 @@ package com.example.crudproject.controller;
 
 
 import com.example.crudproject.model.Orcamento;
+import com.example.crudproject.model.StatusOrcamento;
 import com.example.crudproject.service.OrcamentoService;
 import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
@@ -39,5 +42,16 @@ public class OrcamentoController {
     @DeleteMapping("/{id}")
     public void deletar(@PathVariable int id){
         orcamentoService.deletarOrcamento(id);
+    }
+
+    @PutMapping("/{id}/rejeitar")
+    public Orcamento rejeitarOrcamento(@PathVariable int id) {
+        return orcamentoService.rejeitarOrcamento(id);
+    }
+
+    @GetMapping("/status/{status}")
+    public List<Orcamento> buscarPorStatus(
+            @PathVariable StatusOrcamento status) {
+        return orcamentoService.buscarPorStatus(status);
     }
 }

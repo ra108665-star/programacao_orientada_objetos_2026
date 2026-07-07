@@ -6,16 +6,20 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Produto {
+public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     private String nome;
-    private double preco;
+    private String email;
+    private String telefone;
 
-    public long getId() {
+    public Cliente() {
+    }
+
+    public int getId() {
         return id;
     }
 
@@ -23,24 +27,23 @@ public class Produto {
         return nome;
     }
 
-    public double getPreco() {
-        return preco;
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", preco=" + preco +
-                '}';
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }
